@@ -4,5 +4,6 @@ def prime?(prime_lab)
   while i < integer
   return false if integer % i == 0 
    i += 1 
+ end
 true
 end
