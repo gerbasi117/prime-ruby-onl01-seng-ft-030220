@@ -1,15 +1,9 @@
-def get_prime_no_upto(number)
-  start = 2
-  primes = (start..number).to_a
-  (start..number).each do |no|
-    (start..no).each do |num|
-      if ( no % num  == 0) && num != no
-        primes.delete(no)
-        break
-      end
+def prime?(integer)
+    return false if integer < 2
+    (2..integer - 1).each do |x|
+        if (integer % x) == 0
+            return false
+        end
     end
-  end
-  primes
+    true
 end
-
-puts get_prime_no_upto(100)
