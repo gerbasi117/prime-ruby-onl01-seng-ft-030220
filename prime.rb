@@ -11,3 +11,4 @@ def get_prime_no_upto(number)
   end
   primes
 end
+
