@@ -1,4 +1,4 @@
-def prime?(prime_lab)
+def prime?(integer)
   i = 2 
   return false if integer is <= 1
   while i < integer
